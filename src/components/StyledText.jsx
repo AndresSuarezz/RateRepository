@@ -23,16 +23,21 @@ const styles = StyleSheet.create({
     },
     small: {
         fontSize: 10
+    },
+    textAlignCenter: {
+        textAlign: 'center'
     }
 })
 
-export default function StyledText({children, color, fontSize, fontWeight, style, ...restOfprops})  {
+export default function StyledText({children, color, fontSize, fontWeight, style, align, ...restOfprops})  {
     const textStyles = [
         styles.text,
         color === 'primary' && styles.colorPrimary,
         color === 'secondary' && styles.colorSecondary,
         fontSize === 'subheading' && styles.subheading,
         fontWeight === 'bold' && styles.bold,
+        align === 'center' && styles.textAlignCenter,
+        style
     ]
 
     return (

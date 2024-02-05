@@ -1,18 +1,13 @@
 import React from "react";
-import {View, Image, StyleSheet} from "react-native";
-import StyledText from "./StyledText";
+import {View, StyleSheet} from "react-native";
+import RepositoryStats from "./RepositoryStats";
+import RepositoryItemHeader from "./RepositoryItemHeader";
 
 const RepositoryItem = ({props}) => {
     return (
         <View style={styles.container} key={props.id}>
-            <StyledText fontSize='subheading' fontWeight='bold'>{props.fullname}</StyledText>
-            <StyledText>{props.description}</StyledText>
-            <StyledText>{props.language}</StyledText>
-            <StyledText>Forks: {props.forksCount}</StyledText>
-            <StyledText>Stars: {props.stargazersCount}</StyledText>
-            <StyledText>Review: {props.reviewCount}</StyledText>
-            <StyledText>Rating: {props.ratingAverage}</StyledText>
-            <Image source={{uri: props.ownerAvatarUrl}} style={{width: 50, height: 50}} />
+            <RepositoryItemHeader {...props} />
+            <RepositoryStats {...props} />
         </View>
     );
 }

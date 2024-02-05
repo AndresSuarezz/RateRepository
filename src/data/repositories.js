@@ -13,8 +13,8 @@ export default [
   {
     id: "jared.midu.dev",
     fullname: "jared/formik",
-    description: "Blog de noticias sobre desarrollo",
-    language: "HTML",
+    description: "Build forms in React, whithout the tears",
+    language: "TypeScript",
     forksCount: 3123,
     stargazersCount: 41231,
     ratingAverage: 4.7,
@@ -24,12 +24,24 @@ export default [
   {
     id: "rails.midu.dev",
     fullname: "rails/rails",
-    description: "Blog de noticias sobre desarrollo",
-    language: "HTML",
+    description: "Ruby on Rails",
+    language: "Ruby",
     forksCount: 3123,
     stargazersCount: 41231,
     ratingAverage: 4.7,
     reviewCount: 123,
     ownerAvatarUrl: "https://avatars.githubusercontent.com/u/1561355?v=4",
-  }
+  },
+  {
+    id: "django.midu.dev",
+    fullname: "django/django",
+    description: "The web framework for perfectionists with deadlines",
+    language: "Python",
+    forksCount: 3123,
+    stargazersCount: 41231,
+    ratingAverage: 4.7,
+    reviewCount: 123,
+    ownerAvatarUrl: "https://avatars.githubusercontent.com/u/1565355?v=4",
+  },
+  
 ];
